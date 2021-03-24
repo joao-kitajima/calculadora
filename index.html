@@ -19,7 +19,7 @@
 
             <div id="janelas">
                 <div id="console">
-                    <h3 id="valorInserido"></h3>
+                    <input id="valorInserido" name="valorInserido" type="text" maxlength="15" />
 
                     <h2>Resultado</h2>
 
@@ -27,33 +27,33 @@
                 </div>
                 
                 <div id="teclado">
-                    <button id="sete" class="botao">7</button>
+                    <button id="sete" class="botao" onClick="inserir(7)">7</button>
 
-                    <button id="oito" class="botao">8</button>
+                    <button id="oito" class="botao" onClick="inserir(8)">8</button>
 
-                    <button id="nove" class="botao">9</button>
+                    <button id="nove" class="botao" onClick="inserir(9)">9</button>
 
                     <button id="dividir" class="botao">&#247;</button>
 
-                    <button id="quatro" class="botao">4</button>
+                    <button id="quatro" class="botao" onClick="inserir(4)">4</button>
 
-                    <button id="cinco" class="botao">5</button>
+                    <button id="cinco" class="botao" onClick="inserir(5)">5</button>
 
-                    <button id="seis" class="botao">6</button>
+                    <button id="seis" class="botao" onClick="inserir(6)">6</button>
 
                     <button id="multiplicar" class="botao">&#215;</button>
 
-                    <button id="um" class="botao">1</button>
+                    <button id="um" class="botao" onClick="inserir(1)">1</button>
 
-                    <button id="dois" class="botao">2</button>
+                    <button id="dois" class="botao" onClick="inserir(2)">2</button>
 
-                    <button id="tres" class="botao">3</button>
+                    <button id="tres" class="botao" onClick="inserir(3)">3</button>
 
                     <button id="subtrair" class="botao">&#8722;</button>
 
                     <button id="apagar" class="botao">&#x3c;</button>
 
-                    <button id="zero" class="botao">0</button>
+                    <button id="zero" class="botao" onClick="inserir(0)">0</button>
 
                     <button id="calcular" class="botao">&#61;</button>
 
@@ -62,6 +62,6 @@
             </div>
         </div>
 
-        <script scr="./index.js" type="text/JavaScript"></script>
+        <script src="./index.js" type="text/JavaScript"></script>
     </body>
 </html>
