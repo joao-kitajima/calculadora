@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+:root {
+    --fonte: 'Source Code Pro', monospace;
+
+    --corFundo: #1e2e3e;
+    --corPrimaria: #eee;
+    --corSecundaria: #cdcdcd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background-color: var(--corFundo);
+    color: var(--corPrimaria);
+    font-family: var(--fonte);
+}
+
+#pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo {
+    margin-top: 12.5vh;
+    margin-bottom: 7.5vh;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#janelas {
+    display: flex;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+}
+
+#console {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+    margin-right: 5vw;
+}
+
+#valorInserido {
+    height: 7.5vh;
+    width: 15vw;
+    background-color: var(--corPrimaria);
+    border: 2px solid var(--corFundo);
+    border-radius: 15px 15px 15px 15px;
+}
+
+#console h2 {
+    font-size: 1.75rem;
+    padding-top: 4.75vh;
+}
+
+#resultado {
+    height: 12.5vh;
+    width: 15vw;
+    background-color: var(--corSecundaria);
+    border: 2px solid var(--corFundo);
+    border-radius: 15px 15px 15px 15px;
+}
+
+#teclado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 15px;
+    margin-left: 5vw;
+}
+
+.botao {
+    margin: 1.5px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: var(--corFundo);
+}
