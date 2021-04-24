@@ -186,6 +186,12 @@ html, body {
   code {
     font-family: var(--font-code);
   }
+
+button {
+    padding: 15px;
+    background-color: #eee;
+    color: #d0094d;
+}
   
   :root {
     /* Fontes */

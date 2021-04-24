@@ -239,11 +239,11 @@ html, body {
     align-items: center;
   }
 
-  .btn {
-      height: 5vh;
-      background-color: #eee;
-      color: #d0094d;
-  }
+button {
+    padding: 15px;
+    background-color: #eee;
+    color: #d0094d;
+}
   
   /* Fontes */
   @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
