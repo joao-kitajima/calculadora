@@ -1,0 +1,258 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+:root {
+    --fonte: 'Source Code Pro', monospace;
+
+    --corFundo: #1e2e3e;
+    --corPrimaria: #eee;
+    --corSecundaria: #cdcdcd;
+    --corTerciaria: #d00964;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background-color: var(--corFundo);
+    color: var(--corPrimaria);
+    font-family: var(--fonte);
+}
+
+#pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo {
+    margin-top: 12.5vh;
+    margin-bottom: 7.5vh;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--corTerciaria);
+    text-shadow: 1.15px 1.15px 1.15px var(--corPrimaria);
+}
+
+#janelas {
+    display: flex;
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
+}
+
+#console {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+    margin-right: 5vw;
+}
+
+#valorInserido {
+    height: 7.5vh;
+    width: 20vw;
+    background-color: var(--corPrimaria);
+    border: 2px solid var(--corFundo);
+    border-radius: 15px 15px 15px 15px;
+    font-size: 2.5rem;
+    font-family: var(--fonte);
+    color: var(--corFundo);
+    font-weight: 700;
+    padding-left: .5vw;
+}
+
+#console h2 {
+    font-size: 1.75rem;
+    padding-top: 4.75vh;
+    color: var(--corTerciaria);
+}
+
+#resultado {
+    height: 12.5vh;
+    width: 20vw;
+    background-color: var(--corSecundaria);
+    border: 2px solid var(--corFundo);
+    border-radius: 15px 15px 15px 15px;
+}
+
+#teclado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 15px;
+    margin-left: 5vw;
+}
+
+#teclado button:hover {
+    box-shadow: 0 0 3.5px var(--corPrimaria);
+}
+
+#teclado button:active  {
+    transform: translate3d(1.35px, 1.35px, 1.35px);
+}
+
+.botao {
+    margin: 1.5px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: var(--corFundo);
+} */
+
+/* Scalable and Modular Architecture for CSS */
+/* Base CSS */
+* {
+    /* margin: 0; */
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Layout CSS */
+  html, body {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+  }
+  
+  /* Fluid Typography CSS */
+  html {
+    /* font-size: calc(16px + 1vw); */
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+  
+  body {
+    background-color: var(--color-primary);
+    font-family: var(--font-body);
+    color: #eee;
+  }
+  
+  h1 {
+    font-size: 1.772em;
+  }
+  
+  h2 {
+    font-size: 1.611em;
+  }
+  
+  h3 {
+    font-size: 1.464em;
+  }
+  
+  h4 {
+    font-size: 1.331em; 
+  }
+  
+  h5 {
+    font-size: 1.21em;
+  }
+  
+  h6 {
+    font-size: 1.1em;
+  }
+  
+  /* h1 {
+    font-size: 1.828em;
+  }
+  
+  h2 {
+    font-size: 1.471em;
+  }
+  
+  h3 {
+    font-size: 1.406em;
+  }
+  
+  h4 {
+    font-size: 1.3em;
+  }
+  
+  h5 {
+    font-size: 1.132em;
+  }
+  
+  h6 {
+    font-size: 1.081em;
+  } */
+  
+  code {
+    font-family: var(--font-code);
+  }
+  
+  :root {
+    /* Fontes */
+    --font-body: 'PT Sans', sans-serif;
+    --font-code: 'Fira Code', monospace;
+  
+    /* Cores */
+    --color-primary: #1e2e3e;
+    --color-secundary: #d0094d;
+    --color-terciary: #04d361;
+      
+    --color-primary-hover: #253a4f;
+    --color-secundary-hover: #a0063c;
+    --color-terciary-hover: #00af4f;
+  
+    --min-width: 320px;
+    --max-width: 800px;
+    --min-fontSize: 16px;
+    --max-fontSize: 20px;
+    /* font-size: var(--min-fontSize); */
+  }
+  
+  /* @media only screen and (min-width: 320px) and (max-width: 800px) {
+    :root {
+      font-size: calc(
+        var(--min-fontSize) + ( var(--max-fontSize) - var(--min-fontSize) ) * ( ( 100vw - var(--min-width) ) / ( var(--max-width) - var(--min-width) ) )
+      );
+    }
+  } */
+  
+  /* @media only screen and (min-width: 320px) and (max-width: 800px) {
+    :root {
+      --calc-a: calc(20 - 16);
+      --calc-b: calc(var(--calc-b1) / var(--calc-b2));
+      --calc-b1: calc(100vw - var(--min-width));
+      --calc-b2: calc(800 - 320);
+      --calc-c: calc(var(--calc-a) * var(--calc-b));
+      font-size: calc(var(--min-fontSize) + var(--calc-c));
+    }
+  } */
+  
+  /* @media only screen and (min-width: 800px) {
+    :root {
+      font-size: var(--max-fontSize);
+    }
+  } */
+  
+  /* Estilos personalizados */
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Fontes */
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+  
+  /*
+    RESPONSIVIDADE
+  
+    Pontos de Quebra na Largura:
+    - xxs/ppp: '320px';
+    - xs/pp: '480px';
+    - sm/p: '576px';
+    - md/m: '768px';
+    - lg/g: '992px';
+    - xl/gg: '1200px';
+    - xxl/ggg: '1600px';
+  */
+  
