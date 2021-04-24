@@ -125,7 +125,7 @@ html, body {
   /* Fluid Typography CSS */
   html {
     /* font-size: calc(16px + 1vw); */
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: calc(1em + 1vw);
   }
   
   body {
