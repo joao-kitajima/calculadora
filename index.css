@@ -203,7 +203,7 @@ html, body {
     --min-width: 320px;
     --max-width: 800px;
     --min-fontSize: 16px;
-    --max-fontSize: 24px;
+    --max-fontSize: 20px;
     /* font-size: var(--min-fontSize); */
   }
   
@@ -217,7 +217,7 @@ html, body {
   
   @media only screen and (min-width: 320px) and (max-width: 800px) {
     :root {
-      --calc-a: calc(32 - 24);
+      --calc-a: calc(20 - 16);
       --calc-b: calc(var(--calc-b1) / var(--calc-b2));
       --calc-b1: calc(100vw - var(--min-width));
       --calc-b2: calc(800 - 320);
