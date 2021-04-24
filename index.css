@@ -125,7 +125,7 @@ html, body {
   /* Fluid Typography CSS */
   html {
     /* font-size: calc(16px + 1vw); */
-    font-size: 12px;
+    /* font-size: 100%; */
   }
   
   body {
@@ -134,7 +134,7 @@ html, body {
     color: #eee;
   }
   
-  /* h1 {
+  h1 {
     font-size: 1.772em;
   }
   
@@ -156,7 +156,7 @@ html, body {
   
   h6 {
     font-size: 1.1em;
-  } */
+  }
   
   /* h1 {
     font-size: 1.828em;
@@ -202,8 +202,8 @@ html, body {
   
     --min-width: 320px;
     --max-width: 800px;
-    --min-fontSize: 12px;
-    --max-fontSize: 24px;
+    --min-fontSize: 16px;
+    --max-fontSize: 32px;
     /* font-size: var(--min-fontSize); */
   }
   
@@ -217,7 +217,7 @@ html, body {
   
   @media only screen and (min-width: 320px) and (max-width: 800px) {
     :root {
-      --calc-a: calc(24 - 12);
+      --calc-a: calc(32 - 16);
       --calc-b: calc(var(--calc-b1) / var(--calc-b2));
       --calc-b1: calc(100vw - var(--min-width));
       --calc-b2: calc(800 - 320);
